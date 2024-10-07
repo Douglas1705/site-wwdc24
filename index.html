@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Style-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font-->
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+
+    <title>WWDC24</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container-nav">
+                <img src="img/maca-pequena.svg" class="maca-pequena item1" alt="">
+                <ul class="nav-links item2">
+                    <li><a href="">Store</a></li>
+                    <li><a href="">Mac</a></li>
+                    <li><a href="">iPad</a></li>
+                    <li><a href="">iPhone</a></li>
+                    <li><a href="">Watch</a></li>
+                    <li><a href="">Vision</a></li>
+                    <li><a href="">AirPods</a></li>
+                    <li><a href="">TV & Home</a></li>
+                    <li><a href="">Entertainment</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+                <div class="container-img">
+                    <img src="img/lupa.svg" class="lupa item3" alt="">
+                    <img src="img/carteira.svg" class="carteira item4" alt="">
+                </div>
+            </div>
+            <div class="menu-hamburguer item5">
+                <div class="barra"></div>
+                <div class="barra"></div>
+            </div>
+        </nav>
+
+
+        <section class="section-container">
+            <img src="img/maça-colorida.svg" class="maca-colorida" alt="">
+
+            <img src="img/logo-WWDC24.svg" class="logo-WWDC24" alt="">
+            <h2>Introducing Apple Intelligence, AI for the rest of us.
+                And exciting updates coming with iOS 18, iPadOS 18,
+                macOS Sequoia, watchOS 11, and visionOS 2.</h2>
+            <button class="button">Watch the Keynote</button>
+
+        </section>
+    </header>
+
+    <section class="components">
+        <h2>Introducing</h2>
+        <img src="img/logo-appleIntell.svg" class="logo-first" alt="">
+
+        <p>
+            The next big step for Apple is here. Apple Intelligence is personal intelligence built into your iPhone,
+            iPad, and Mac to help you write, express yourself, and get things done effortlessly. 1 All while setting a
+            brand-new standard for privacy in AI.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/celular-introduction.png" class="imagem-png" alt="">
+    </section>
+
+    <section class="components bg-selecioned">
+        <img src="img/logo-Ios18.svg" class="logo" alt="">
+
+        <p>
+            Customize your iPhone in more ways than ever, stay connected with friends and family, and relive your
+            favorite moments. And with Apple Intelligence, the things you do every day become even more magical.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/celulares_ios18.png" class="imagem-png-100 img-margin" alt="">
+    </section>
+
+    <section class="components ">
+        <img src="img/logo-ipad.svg" class="logo" alt="">
+
+        <p>
+            Explore new ways to work with Apple Pencil, discover new
+            experiences in apps, and customize iPad even further. And bring your ideas to life like never before with
+            Apple Intelligence.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/ipads.png" class="imagem-png-100 img-margin" alt="">
+    </section>
+
+    <section class="components bg-selecioned">
+        <img src="img/logo-macOS.svg" class="logo" alt="">
+
+        <p>
+            Lay out your workspace on the fly, browse the web with focus,
+            and even use iPhone wirelessly. And Apple Intelligence helps you simplify and accelerate tasks big and
+            small.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/macOS.png" class="imagem-png img-margin" alt="">
+    </section>
+
+    <section class="components">
+        <img src="img/logo-watchOS.svg" class="logo" alt="">
+
+        <p>
+            Get a better understanding of your daily health status using your overnight vitals.2 See how workouts impact
+            your body over time. And discover new features that make Apple Watch even more finely tuned to you.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/watchs.png" class="imagem-png img-margin" alt="">
+    </section>
+
+    <section class="components bg-selecioned">
+        <img src="img/logo-vision.svg" class="logo" alt="">
+
+        <p>
+            Relive and share photos in magical new ways. Immerse yourself in entertainment and work. Navigate easily
+            with new gestures. The groundbreaking experiences of Apple Vision Pro go even further.
+        </p>
+        <button>Explore the preview</button>
+
+        <img src="img/vision.png" class="imagem-png" alt="">
+    </section>
+    
+    <script>
+        const menuHamburguer = document.querySelector('.menu-hamburguer');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuHamburguer.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+
+</html>

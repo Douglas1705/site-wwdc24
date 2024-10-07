@@ -1,0 +1,226 @@
+:root{
+    --primary-Key: rgb(169, 167, 167);
+}
+html{
+    font-size: 62.5%;
+}
+body{    
+    background-color: black;
+    font-family: 'SF Pro Display', sans-serif;
+}
+p{
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+/*header e nav*/
+header{      
+    color: white;
+    width: 80%;
+    height: auto;    
+    display: flex;
+    flex-direction: column;    
+    margin: auto;
+    margin-bottom: 4em;
+}
+header .container-nav{
+    display: flex;
+}
+header nav ul{     
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    justify-content: space-between;
+    flex-direction: row;  
+    padding: 0.75em;
+    width: 80%;
+    margin: auto;        
+}
+header nav ul li{    
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;   
+    color: rgb(169, 167, 167); 
+    font-size: 1.25rem;       
+}
+header .maca-pequena{    
+    margin-top: 3px;
+    width: 1.5em;    
+}
+nav .menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 1em;
+}
+nav .menu-hamburguer .barra {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/*section header*/
+.section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-container .maca-colorida{
+    width: 28%;
+    min-width: 250px;
+    font-size: .5rem;
+}
+.section-container .logo-WWDC24{
+    margin-top: 0.75em;
+    width: 16%;
+    min-width: 150px;
+}
+.section-container h2{
+    font-size: 1.65rem;
+    width: 23em;
+    text-align: center;
+    margin-top: 2rem;
+}
+.section-container button{
+    padding: 1.25em;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: var(--primary-Key);
+    background-color: black;
+    cursor: pointer;
+    margin-top: 1.5em;
+}
+.section-container button:hover{
+    background-color: white;
+    color: black;
+}
+
+/*Componentes */
+.components{
+    background-color: rgb(253, 251, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.components h2{
+    margin-top: 2em;
+    font-size: 2.5rem;
+}
+.components p{
+    color: var(--primary-Key);
+    font-size: 1.55rem;
+    text-align: center;
+    font-weight: 700;
+    width: 25em;     
+}
+.components .logo{
+    margin-top: 5em;
+    height: auto;
+    width: 20%; 
+    min-width: 150px;      
+}
+.bg-selecioned{
+    background-color: rgb(238, 235, 235);    
+}
+.imagem-png{
+    width: 95%;    
+}
+.imagem-png-100{
+    width: 100%;    
+}
+.logo-first{
+    width: 30%;
+    min-width: 300px;
+}
+.img-margin{
+    margin-bottom: 5em;
+}
+.components button{
+    padding: .95em 1.75em;
+    background-color: black;
+    color: aliceblue;
+    border: none;
+    border-radius: 25px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-size: 1.25rem;    
+}
+/*Media queryes*/
+/* Estilos para dispositivos móveis */
+@media (max-width: 480px) {
+    /*header*/
+    .section-container .maca-colorida{
+        width: 48%;
+        margin-top: 5em;                
+    }
+    .section-container .logo-WWDC24{
+        margin-top: 1.75em;
+        width: 30%;
+    }
+    .maca-pequena {
+        width: 0.875rem;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }   
+
+    /*header component*/
+    .section-container h2{
+        font-size: 1.35em;
+    }
+    .components p{
+        font-size: 1.15rem;
+        text-align: center;
+    }       
+}
+
+/* Dispositivos móveis em modo retrato */
+@media (max-width: 968px) {    
+    header nav {
+        display: flex; 
+        justify-content: space-between;      
+        background-color: rgb(17, 1, 1);
+    }   
+    .container-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;        
+    }      
+    header nav .menu-hamburguer {
+        display: flex;            
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 45px;
+        right: 30px;
+        align-items: end;    
+        background-color: rgb(6, 10, 10);
+    }
+    header nav ul.nav-active {
+        display: flex;
+    }
+    header .maca-pequena{            
+        margin-left: 15px;
+        margin-top: -5px;
+        width: 2em;                
+    }  
+    .lupa, .carteira{
+        margin-right: 10px;
+        width: 3.8em;
+    }     
+}
+
+/* Dispositivos extra grandes (laptops e desktops) */
+@media (min-width: 1200px) {
+    
+}
+
+
+
